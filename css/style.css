@@ -36,3 +36,10 @@
     height: 100px;
     background-color: green;
 }
+
+.info {
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
