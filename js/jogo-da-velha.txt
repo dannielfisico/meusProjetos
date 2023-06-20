@@ -1,0 +1,1 @@
+Este game tem que mostrar quantas jogadas foram realizadas em rempo real, ou seja, enquanto o jogo está sendo executado, tem que mostrar qual foi o jogador que realizou a última jogada e além disso, mostrar o vencedor caso ocorra empate também mostrar na tela de resultado.
