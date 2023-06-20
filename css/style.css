@@ -55,7 +55,7 @@ body{
     color: yellow;
     position: absolute;
     top: 0;
-    display: flex; /*Trocar para flex */
+    display: none; /*Trocar para flex */
     justify-content: center;
     align-items: center;
     flex-direction: column;
