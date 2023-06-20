@@ -5,3 +5,34 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    max-width: 900px;
+    height: 600px;
+    border: 3px solid green;
+    background-color: rgb(167, 199, 228);
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+
+.tabuleiro {
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    width: 350px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 5px;
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+}
+
+.celula {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
