@@ -7,7 +7,7 @@ document.querySelector('button').addEventListener('click', ()=>{
 const jogadasFeitas = ["","","","","","","","",""]
 const simbolos = ["🐪","🐻"]
 let jogadorAtual = 0
-let ativa = true
+let gameOver = false
 
 //Selecionar todas as celulas do tabuleiro
 
@@ -21,5 +21,9 @@ celulas.forEach(celula => celula.addEventListener('click', fazerJogada, {once: t
 
 function fazerJogada(celula){
     celula.target.innerHTML = simbolos[jogadorAtual]
+    trocarJogador()
 }
 
+function trocarJogador(){
+    jogadorAtual = jogadorAtual == 0 ? 1 : 0
+}
