@@ -21,6 +21,9 @@ celulas.forEach(celula => celula.addEventListener('click', fazerJogada, {once: t
 
 function fazerJogada(celula){
     celula.target.innerHTML = simbolos[jogadorAtual]
+    //Salvar jogada no array jogadasFeitas
+    jogadasFeitas[celula.target.id] = simbolos[jogadorAtual]
+    console.log(jogadasFeitas)
     trocarJogador()
 }
 
