@@ -8,3 +8,7 @@ const jogadasFeitas = ["","","","","","","","",""]
 const simbolos = ["🐪","🐻"]
 let jogadorAtual = 0
 
+//Selecionar todas as celulas do tabuleiro
+
+const celulas = document.querySelectorAll(".celula")
+
