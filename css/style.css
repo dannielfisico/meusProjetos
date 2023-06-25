@@ -39,6 +39,13 @@ body{
     width: 100px;
     height: 100px;
     background-color: green;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .info {
