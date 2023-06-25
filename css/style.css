@@ -41,12 +41,17 @@ body{
     background-color: green;
     font-size: 70px;
     font-weight: bold;
+    cursor: pointer;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+/* .alvo:hover::after {
+    content: "🐪";
+} */
 
 .info {
     padding: 15px;

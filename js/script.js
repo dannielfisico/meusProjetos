@@ -18,6 +18,25 @@ const celulas = document.querySelectorAll(".celula")
 
 celulas.forEach(celula => celula.addEventListener('click', fazerJogada, {once: true}))
 
+//Adicionar evento ao posicionar o mouse sobre a celula
+
+celulas.forEach(celula => celula.addEventListener("mouseenter", posicionarMouse))
+
+function posicionarMouse(celula){
+    if(jogadasFeitas[celula.target.id] == ""){
+        celula.target.innerHTML = `${simbolos[jogadorAtual]}`
+    }
+}
+//Adicionar evento ao remover o mouse sobre a celula
+celulas.forEach(celula => celula.addEventListener("mouseout", retirarMouse))
+
+function retirarMouse(celula){
+    if(jogadasFeitas[celula.target.id] == ""){
+        celula.target.innerHTML = ``
+    }
+}
+
+
 //Fazer função fazerJogada
 
 function fazerJogada(celula){
@@ -37,3 +56,4 @@ function trocarJogador(){
     jogadorAtual = jogadorAtual == 0 ? 1 : 0
     qtdJogadas++
 }
+
