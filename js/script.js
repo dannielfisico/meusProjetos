@@ -25,6 +25,8 @@ function fazerJogada(celula){
     jogadasFeitas[celula.target.id] = simbolos[jogadorAtual]
     console.log(jogadasFeitas)
     trocarJogador()
+    //Trocar informação do jogador atual, alternando entre um e outro
+    document.querySelector(".info h1").innerHTML = `Jogador atual: ${simbolos[jogadorAtual]}`
 }
 
 function trocarJogador(){
