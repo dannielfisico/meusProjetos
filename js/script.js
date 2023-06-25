@@ -7,6 +7,7 @@ document.querySelector('button').addEventListener('click', ()=>{
 const jogadasFeitas = ["","","","","","","","",""]
 const simbolos = ["🐪","🐻"]
 let jogadorAtual = 0
+let qtdJogadas = 0
 let gameOver = false
 
 //Selecionar todas as celulas do tabuleiro
@@ -26,9 +27,13 @@ function fazerJogada(celula){
     console.log(jogadasFeitas)
     trocarJogador()
     //Trocar informação do jogador atual, alternando entre um e outro
-    document.querySelector(".info h1").innerHTML = `Jogador atual: ${simbolos[jogadorAtual]}`
+    document.querySelector(".info h1:nth-child(1)").innerHTML = `Jogador atual: ${simbolos[jogadorAtual]}`
+    //Trocar informação Quantidade de jogadas realizadas
+    document.querySelector(".info h1:nth-child(2)").innerHTML = `Quantidade de Jogadas: ${qtdJogadas}`
+    
 }
 
 function trocarJogador(){
     jogadorAtual = jogadorAtual == 0 ? 1 : 0
+    qtdJogadas++
 }
