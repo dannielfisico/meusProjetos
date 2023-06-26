@@ -77,14 +77,13 @@ button {
     margin: 15px;
     padding: 15px;
     background-color: yellow;
-    border: none;
     text-transform: uppercase;
     font-weight: bold;
     transition: .8s;
 }
 
 button:hover {
-    transform: scale(1.1);
+    
     color: yellow;
     background-color: black;
     border: 1px solid white;
