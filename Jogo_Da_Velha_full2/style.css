@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabuleiro {
+    width: 400px;
+    /* background-color: blue; */
+    margin: auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+    
+}
+
+.celula {
+    background-color: rgb(87, 165, 141);
+    width: 120px;
+    height: 120px;
+    border: 1px solid blue;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.jogador, .jogadas {
+    /* border: 1px solid red; */
+    width: 362px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Jogo da Velha Full 4</title>
+</head>
+<body>
+    <header>
+        <h1>JOGO DA VELHA</h1>
+        
+        <div class="info">
+            
+            <p>Player1: <span id="avatar1">A</span> | Player2: <span id="avatar2">B</span> </p>
+            <a id="btnJogar" class="hidden" href="#" onclick="jogar()">Jogar Novamente</a>
+            <p class="resultado"></p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="formulario">
+            <h4>SELECIONE O AVATAR PARA OS JOGADORES</h4>
+            <div class="avatares-player1">
+                <label for="icones">Avatar Player1:</label>
+                <input type="radio" name="player1" id="escudo" checked><div id="icone1" class="icone1">🛡️</div>
+                <input type="radio" name="player1" id="sorriso"><div id="icone1" class="icone1">😃</div>
+                <input type="radio" name="player1" id="hamburguer"><div id="icone1" class="icone1">🍔</div>
+                <input type="radio" name="player1" id="foguiete"><div id="icone1" class="icone1">🚀</div>
+                <input type="radio" name="player1" id="foto"><div id="icone1" class="icone1">🔥</div>
+            </div>
+            <div class="avatares-player2">
+                <label for="icones">Avatar Player2:</label>
+                <input type="radio" name="player2" id="coracao" checked><div id="icone2" class="icone2">❤️</div>
+                <input type="radio" name="player2" id="vulcao"><div id="icone2" class="icone2">🌋</div>
+                <input type="radio" name="player2" id="castelo"><div id="icone2" class="icone2">🛕</div>
+                <input type="radio" name="player2" id="construção"><div id="icone2" class="icone2">🚧</div>
+                <input type="radio" name="player2" id="avião"><div id="icone2" class="icone2">✈️</div>
+                <input type="radio" name="player2" id="cadeado"><div id="icone2" class="icone2">🔒</div>
+                <input type="radio" name="player2" id="estrela"><div id="icone2" class="icone2">✨</div>
+            </div>
+            <a id="btnJogar" href="#" onclick="jogar()">JOGAR</a>
+        </div>
+        <div class="board">
+            <div class="celula" id="0"></div>
+            <div class="celula" id="1"></div>
+            <div class="celula" id="2"></div>
+            <div class="celula" id="3"></div>
+            <div class="celula" id="4"></div>
+            <div class="celula" id="5"></div>
+            <div class="celula" id="6"></div>
+            <div class="celula" id="7"></div>
+            <div class="celula" id="8"></div>
+        </div>
+     
+    </div>
+    
+</body>
+</html>

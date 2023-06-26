@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --gradiente-1: linear-gradient(to right, rgb(0, 0, 255), rgb(0, 0, 0));
+    --banner-color: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(236,236,236,1) 100%);
+}
+
+body{
+    position: relative;
+}
+
+
+
+.box {
+    width: 80%;
+    margin: auto;
+    /* background-color: aquamarine; */
+    background: linear-gradient(to right, rgb(0, 0, 255), rgb(0, 0, 0));
+    padding: 25px;
+}
+
+.main-form {
+    padding-left: 20px;
+}
+
+.main-form, .form-group {
+    margin-bottom: 10px;
+}
+
+.main-form, .form-group label {
+    display: block;
+    color: rgb(255, 255, 255);
+    
+}
+
+.main-form, .form-group input {
+    padding: 10px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.button {
+    padding: 15px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+}
+
+
+
+footer {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 6%;
+    bottom: 0;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    
+}
+
+.relative {
+    border: 3px solid #333;
+    height: 500px;
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    
+}
+
+.tabuleiro {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(255, 255, 255); */
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    align-items: center; /* Alinhamento Vertical */
+    /* justify-content: center; */
+    justify-items: center;
+    position: absolute;
+    left: 0px;
+    transition: 1s;
+    
+}
+
+.celula {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    background-color: rgb(94, 33, 143);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;  /* Alinhamento: HORIZONTAL*/
+    align-items: center; /* Alinhamento: HORIZONTAL*/
+    transition: all 1.9s ease-in;
+    transform: scale(2);
+    
+}
+
+#main-navbar {
+background-color: #333;
+color: #eee;
+padding: 15px;
+text-align: center;
+margin-bottom: 10px;
+position: sticky;
+top: 0;
+}
+
+.btnWhatsapp{
+    width: 90px;
+    height: 90px;
+    display: none;
+    background-image: url("./image/whatsapp.png");
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+    transition: .5s;
+    
+    
+}
+
+.btnWhatsapp:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.telaResultado {
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none; /*flex*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.telaResultado button {
+    padding: 10px;
+    margin-top: 8px;
+    background-color: yellow;
+    border: none;
+    transition: .5s;
+}
+
+.telaResultado button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    
+}
+
+.telaResultado h1 {
+    color: rgb(255, 255, 255);
+}

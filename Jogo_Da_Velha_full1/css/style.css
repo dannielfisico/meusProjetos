@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 2px;
+    width: 304px;
+    margin: auto;
+    margin-top: 130px;
+}
+
+.celula {
+    background-color: rgb(102, 104, 104);
+    width: 100px;
+    height: 100px;
+
+    font-size: 60px;
+    color: #eee;
+
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: 3px dotted saddlebrown;
+    width: 500px;
+    margin: 30px auto
+}
+
+.controles {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: rgb(255, 0, 0);
+}
+

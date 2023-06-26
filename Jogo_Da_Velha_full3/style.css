@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabuleiro {
+    width: 400px;
+    /* background-color: blue; */
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+    
+}
+
+.celula {
+    background-color: rgb(87, 165, 141);
+    width: 120px;
+    height: 120px;
+    border: 1px solid blue;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.jogador, .jogadas {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 362px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.seletores {
+    display: grid;
+    /* display: none; */
+    
+}
+
+.jogador1, .jogador2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.jogar {
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(87, 165, 141);
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+
+a:hover {
+    background-color:rgb(73, 129, 113); ;
+}

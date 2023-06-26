@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.tabuleiro {
+    padding: 40px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 8px;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.celula {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: wheat;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+.info {
+    width: 350px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-rows: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
