@@ -9,6 +9,15 @@ body{
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+
 .container {
     max-width: 900px;
     height: 600px;

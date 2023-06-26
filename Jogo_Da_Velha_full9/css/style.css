@@ -74,7 +74,9 @@ body{
 }
 
 .info h1 {
-    font-size: 1.2em;    
+    font-size: 1.2em; 
+    
+}    
 
 button {
     margin: 15px;
