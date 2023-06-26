@@ -8,7 +8,6 @@ const jogadasFeitas = ["","","","","","","","",""]
 const simbolos = ["🐪","🐻"]
 let jogadorAtual = 0
 let qtdJogadas = 0
-let gameOver = false
 
 //Selecionar todas as celulas do tabuleiro
 
@@ -35,7 +34,6 @@ function retirarMouse(celula){
         celula.target.innerHTML = ``
     }
 }
-
 
 //Fazer função fazerJogada
 
@@ -100,5 +98,29 @@ function eEmpate(){
         document.querySelector('.tela-resultado h1').innerHTML = `Empate`
         return true
     }
+    return false
+}
+
+function eCampeao2(){
+    const posicoesCampeans = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ]
+
+    posicoesCampeans.every(sequencia => {
+        resp.every(resp => {
+            if(jogadasFeitas[sequencia[0]] == jogadasFeitas[sequencia[1]] && jogadasFeitas[sequencia[0]] == jogadasFeitas[sequencia[2]] && jogadasFeitas[resp[0]] != "" ){
+                return true
+            }
+        })
+    })
+
+
     return false
 }
