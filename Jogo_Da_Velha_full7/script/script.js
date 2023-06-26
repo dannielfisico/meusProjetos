@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             ondeClicou.target.innerHTML = `${simbolos[jogadorAtual]}`
             jogadasFeitas[id] = simbolos[jogadorAtual]
             passarJogada()
-        })
+        },{once: true})
     })
 
 
