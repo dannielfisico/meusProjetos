@@ -48,7 +48,9 @@ a:visited {
     width: 100px;
     height: 100px;
     background-color: green;
-    font-size: 70px;
+    font-size: 28px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
     font-weight: bold;
     cursor: pointer;
     color: white;
