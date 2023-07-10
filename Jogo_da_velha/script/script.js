@@ -11,14 +11,31 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const celulas = document.querySelectorAll('.celula')
+
+    const trocarJogador = () => {
+        player = player == 0 ? 1 : 0
+    }
+
+   
     
     const fazerJogada = (e) => {
         console.log(e.target.id)
+        //escrever o simbolo do jogador dentro da celula clicada
         e.target.innerHTML = simbolos[player]
+        //salvar o simbolo do jogador no array tabuleiro
+        tabuleiro[e.target.id] = simbolos[player]
+        console.log(tabuleiro)
+        //trocar o simbolo do jogador
+        trocarJogador()
     }
+
+
     celulas.forEach(celula => {
         celula.addEventListener('click', fazerJogada, {once:true})
+        
+        
     })
   
 
 })
+
