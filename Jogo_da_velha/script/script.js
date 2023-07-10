@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabuleiro = ["","","","","","","","",""]
     const simbolos = ['X',"O"]
     let player = 0
+    const vezDe = document.querySelector('header h2')
     const board = document.querySelector('.board')
     tabuleiro.forEach((celula, index) => {
         const divSquare = document.createElement('div')
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const trocarJogador = () => {
         player = player == 0 ? 1 : 0
+        vezDe.innerHTML = `Vez de: ${simbolos[player]}`
     }
 
    
@@ -29,11 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         trocarJogador()
     }
 
-
+    //Para cada ceula de celulas será add um evento de clique que ocorerá apenas uma vez
     celulas.forEach(celula => {
         celula.addEventListener('click', fazerJogada, {once:true})
-        
-        
     })
   
 
