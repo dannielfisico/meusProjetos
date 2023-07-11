@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const celulas = document.querySelectorAll('.celula')
 
     const trocarJogador = () => {
-        if(!eCampeao()){
+        if(!eCampeao() && !eEmpate()){
             player = player == 0 ? 1 : 0
             vezDe.innerHTML = `Vez de: ${simbolos[player]}`
         }else {
