@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(gameOver) //adicionar a div gameOver ao body
     const titulo = document.createElement('h1') //criar título h1
     titulo.innerHTML = `VENCEDOR` //add texto ao título
-    gameOver.appendChild(titulo)
+    gameOver.appendChild(titulo) //add titulo dentro da div gameOver
     const btnJogarNovamente = document.createElement('a')
     btnJogarNovamente.setAttribute('href', "#")
     btnJogarNovamente.innerHTML = `Jogar Novamente`
