@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btnJogarNovamente.innerHTML = `Jogar Novamente`
     gameOver.appendChild(btnJogarNovamente)
 
-    //JOGO
+    //JOGO\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/
     const tabuleiro = ["","","","","","","","",""]
-    const simbolos = ['X',"O"]
+    const simbolos = ['🤺',"🛡️"]
     let player = 0
     const vezDe = document.querySelector('header h2')
     // const btnJogarNovamente = document.querySelector('.gameOver a')
