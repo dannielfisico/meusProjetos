@@ -10,6 +10,7 @@ main {
     flex-direction: column;
     margin: auto;
     width: 400px;
+    
 
 }
 
@@ -25,20 +26,23 @@ header {
 .board {
     width: 400px;
     height: 400px;
-    display: grid;
-    gap: 6px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
 }
 
 .celula {
     width: 120px;
     height: 120px;
     background-color: rgb(148, 148, 221);
+    font-size: 60px;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
-    color: #fff;
+    
 }
 
 .celula:hover {
