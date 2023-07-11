@@ -1,22 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const main = document.createElement('main')
-    document.body.appendChild(main)
-    const header = document.createElement('header')
-    main.appendChild(header)
-    const headerH1 = document.createElement('h1')
-    headerH1.innerHTML = `Jogo da Velha`
-    header.appendChild(headerH1)
-    const linha = document.createElement('hr')
-    header.appendChild(linha)
-    const headerH2 = document.createElement('h2')
-    headerH2.innerHTML = `Vez de: X`
-    header.appendChild(headerH2)
+    const main = document.createElement('main') //Criar uma tag main
+    document.body.appendChild(main) //Colocar a tag main criada dentro do body
+    const header = document.createElement('header')  //Criar uma tag header
+    main.appendChild(header) //Colocar a tag header criada dentro do main
+    const headerH1 = document.createElement('h1') //Criar a tag h1 que ficaraá dentro de header
+    headerH1.innerHTML = `Jogo da Velha` //Colocar o texto dentro do headerH1
+    header.appendChild(headerH1) //Colocar o headerH1 dentro do header
+    const linha = document.createElement('hr') //Criar uma linha horizontal
+    header.appendChild(linha) //Colocar a linha horizontal dentro do header
+    const headerH2 = document.createElement('h2')//Criar um headerH2
+    headerH2.innerHTML = `Vez de: X`//Colocar o texto dentro do headerH2
+    header.appendChild(headerH2) //Colocar o headerH2 dentro do header
 
-    const tabuleiroBoard = document.createElement('div')
-    tabuleiroBoard.setAttribute('class','board')
-    main.appendChild(tabuleiroBoard)
-
-
+    const tabuleiroBoard = document.createElement('div') //Criar uma div para conter as celulas 
+    tabuleiroBoard.setAttribute('class','board') //Atribuir uma classe 'board'
+    main.appendChild(tabuleiroBoard) //Colocar a div criada dentro da main
 
     const gameOver = document.createElement('div')
     gameOver.setAttribute('class', 'gameOver')
