@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gameOver.setAttribute('class', 'gameOver') //atribuir a classe 'gameOver' à div criada
     document.body.appendChild(gameOver) //adicionar a div gameOver ao body
     const titulo = document.createElement('h1') //criar título h1
-    titulo.innerHTML = `VENCEDOR`
+    titulo.innerHTML = `VENCEDOR` //add texto ao título
     gameOver.appendChild(titulo)
     const btnJogarNovamente = document.createElement('a')
     btnJogarNovamente.setAttribute('href', "#")
