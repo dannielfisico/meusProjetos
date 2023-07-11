@@ -52,8 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!eCampeao() && !eEmpate()){
             player = player == 0 ? 1 : 0
             vezDe.innerHTML = `Vez de: ${simbolos[player]}`
+            document.title = `${simbolos[player]} - Jogo da velha`
         }else {
             document.querySelector('header h2').innerHTML = `JOGO ENCERRADO`
+            // document.title = `Jogo Encerrado`
         }
        
     }
@@ -79,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(tabuleiro[pos0] === tabuleiro[pos1] && tabuleiro[pos0] === tabuleiro[pos2] && tabuleiro[pos0] != ""){
                 document.querySelector('.gameOver').style.display ='flex'
                 document.querySelector('.gameOver h1').innerHTML = `"${simbolos[player]}" VENCEU!`
-                
+                document.title = `Jogo Encerrado | "${simbolos[player]}" VENCEU!`
                 return true
             }
         }
@@ -90,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(!eCampeao() && tabuleiro.indexOf("") === -1){
         document.querySelector('.gameOver').style.display ='flex'
         document.querySelector('.gameOver h1').innerHTML = `EMPATE!`
+        document.title = `Jogo Encerrado | Empate!`
         return true
     }
     return false
