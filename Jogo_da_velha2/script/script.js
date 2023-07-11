@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     tabuleiroBoard.setAttribute('class','board') //Atribuir uma classe 'board'
     main.appendChild(tabuleiroBoard) //Colocar a div criada dentro da main
 
-    const gameOver = document.createElement('div')
-    gameOver.setAttribute('class', 'gameOver')
-    document.body.appendChild(gameOver)
-    const titulo = document.createElement('h1')
+    const gameOver = document.createElement('div')//Criar div 
+    gameOver.setAttribute('class', 'gameOver') //atribuir a classe 'gameOver' à div criada
+    document.body.appendChild(gameOver) //adicionar a div gameOver ao body
+    const titulo = document.createElement('h1') //criar título h1
     titulo.innerHTML = `VENCEDOR`
     gameOver.appendChild(titulo)
     const btnJogarNovamente = document.createElement('a')
