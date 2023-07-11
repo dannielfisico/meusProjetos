@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.location.reload()
     })
 
-
     tabuleiro.forEach((celula, index) => {
         const divSquare = document.createElement('div')
         divSquare.setAttribute('class', 'celula')
@@ -21,8 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const celulas = document.querySelectorAll('.celula')
 
     const trocarJogador = () => {
-        player = player == 0 ? 1 : 0
-        vezDe.innerHTML = `Vez de: ${simbolos[player]}`
+        if(!eCampeao()){
+            player = player == 0 ? 1 : 0
+            vezDe.innerHTML = `Vez de: ${simbolos[player]}`
+        }else {
+            document.querySelector('header h2').innerHTML = `JOGO ENCERRADO`
+        }
+       
     }
 
    const eCampeao = () => {
@@ -46,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(tabuleiro[pos0] === tabuleiro[pos1] && tabuleiro[pos0] === tabuleiro[pos2] && tabuleiro[pos0] != ""){
                 document.querySelector('.gameOver').style.display ='flex'
                 document.querySelector('.gameOver h1').innerHTML = `"${simbolos[player]}" VENCEU!`
+                
                 return true
             }
         }
@@ -56,7 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if(!eCampeao() && tabuleiro.indexOf("") === -1){
         document.querySelector('.gameOver').style.display ='flex'
         document.querySelector('.gameOver h1').innerHTML = `EMPATE!`
+        return true
     }
+    return false
    }
     
     const fazerJogada = (e) => {
@@ -72,14 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(eCampeao())
         trocarJogador()
         
-       
     }
 
     //Para cada ceula de celulas será add um evento de clique que ocorerá apenas uma vez
     celulas.forEach(celula => {
         celula.addEventListener('click', fazerJogada, {once:true})
-    })
-  
-    
+    })  
 })
-
