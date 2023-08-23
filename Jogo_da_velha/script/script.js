@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
     }
 
-    //Para cada ceula de celulas será add um evento de clique que ocorerá apenas uma vez
+    //Para cada celula de celulas será add um evento de clique que ocorerá apenas uma vez
     celulas.forEach(celula => {
         celula.addEventListener('click', fazerJogada, {once:true})
     })  
