@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+header {
+    background-color: red;
+    
+}
+
+
+
+.container {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: yellowgreen;
+}
