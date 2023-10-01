@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    color: aliceblue;
+    user-select: none;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.celula {
+    color: aliceblue;
+    background-color: blueviolet;
+    user-select: none;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#container{
+    background-color: black;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+
+}
+
+footer {
+
+}
